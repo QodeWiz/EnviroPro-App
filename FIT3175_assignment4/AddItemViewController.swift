@@ -27,7 +27,6 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let appDelegate = UIApplication.shared.delegate as! AppDelegate; managedObjectContext = appDelegate.persistentContainer?.viewContext
-        animateEffect()
     }
     
     /**
