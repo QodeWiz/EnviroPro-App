@@ -6,14 +6,20 @@
 //
 
 import UIKit
+import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var persistentContainer: NSPersistentContainer?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        persistentContainer = NSPersistentContainer(name: "ImageModel")
+        persistentContainer?.loadPersistentStores() { (description, error) in
+        if let error = error {
+        fatalError("Failed to load CoreData stack with error: \(error)")
+        } }
         return true
     }
 

@@ -21,5 +21,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This application uses this information to display locations on a map</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This application requires the camera to take photos for storage in the application</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This application requires the use of the photo library to get photos on the simulator</string>
 </dict>
 </plist>

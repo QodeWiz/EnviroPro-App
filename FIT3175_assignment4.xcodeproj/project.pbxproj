@@ -13,6 +13,13 @@
 		4C56622E2A322183006EBF76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C56622C2A322183006EBF76 /* Main.storyboard */; };
 		4C5662302A322184006EBF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C56622F2A322184006EBF76 /* Assets.xcassets */; };
 		4C5662332A322184006EBF76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5662312A322184006EBF76 /* LaunchScreen.storyboard */; };
+		4C56623D2A324345006EBF76 /* AirQualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56623C2A324345006EBF76 /* AirQualityViewController.swift */; };
+		4C5662422A326841006EBF76 /* ImageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C5662402A326841006EBF76 /* ImageModel.xcdatamodeld */; };
+		4C5662452A326862006EBF76 /* ImageMetaData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5662432A326862006EBF76 /* ImageMetaData+CoreDataClass.swift */; };
+		4C5662462A326862006EBF76 /* ImageMetaData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5662442A326862006EBF76 /* ImageMetaData+CoreDataProperties.swift */; };
+		4C5662482A32688A006EBF76 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5662472A32688A006EBF76 /* ImageCollectionViewCell.swift */; };
+		4C56624A2A3268D0006EBF76 /* RecycleLogCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5662492A3268D0006EBF76 /* RecycleLogCollectionViewController.swift */; };
+		4C8911B92A326DC00087FBCE /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8911B82A326DC00087FBCE /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		4C56622F2A322184006EBF76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C5662322A322184006EBF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C5662342A322184006EBF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C56623C2A324345006EBF76 /* AirQualityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityViewController.swift; sourceTree = "<group>"; };
+		4C5662412A326841006EBF76 /* ImageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageModel.xcdatamodel; sourceTree = "<group>"; };
+		4C5662432A326862006EBF76 /* ImageMetaData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageMetaData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4C5662442A326862006EBF76 /* ImageMetaData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageMetaData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4C5662472A32688A006EBF76 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		4C5662492A3268D0006EBF76 /* RecycleLogCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleLogCollectionViewController.swift; sourceTree = "<group>"; };
+		4C8911B82A326DC00087FBCE /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,8 @@
 		4C56621A2A322183006EBF76 = {
 			isa = PBXGroup;
 			children = (
+				4C5662432A326862006EBF76 /* ImageMetaData+CoreDataClass.swift */,
+				4C5662442A326862006EBF76 /* ImageMetaData+CoreDataProperties.swift */,
 				4C5662252A322183006EBF76 /* FIT3175_assignment4 */,
 				4C5662242A322183006EBF76 /* Products */,
 			);
@@ -63,6 +79,11 @@
 				4C56622F2A322184006EBF76 /* Assets.xcassets */,
 				4C5662312A322184006EBF76 /* LaunchScreen.storyboard */,
 				4C5662342A322184006EBF76 /* Info.plist */,
+				4C56623C2A324345006EBF76 /* AirQualityViewController.swift */,
+				4C5662402A326841006EBF76 /* ImageModel.xcdatamodeld */,
+				4C5662472A32688A006EBF76 /* ImageCollectionViewCell.swift */,
+				4C5662492A3268D0006EBF76 /* RecycleLogCollectionViewController.swift */,
+				4C8911B82A326DC00087FBCE /* AddItemViewController.swift */,
 			);
 			path = FIT3175_assignment4;
 			sourceTree = "<group>";
@@ -138,8 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5662422A326841006EBF76 /* ImageModel.xcdatamodeld in Sources */,
 				4C56622B2A322183006EBF76 /* ViewController.swift in Sources */,
+				4C5662482A32688A006EBF76 /* ImageCollectionViewCell.swift in Sources */,
+				4C5662452A326862006EBF76 /* ImageMetaData+CoreDataClass.swift in Sources */,
+				4C56624A2A3268D0006EBF76 /* RecycleLogCollectionViewController.swift in Sources */,
+				4C8911B92A326DC00087FBCE /* AddItemViewController.swift in Sources */,
+				4C56623D2A324345006EBF76 /* AirQualityViewController.swift in Sources */,
 				4C5662272A322183006EBF76 /* AppDelegate.swift in Sources */,
+				4C5662462A326862006EBF76 /* ImageMetaData+CoreDataProperties.swift in Sources */,
 				4C5662292A322183006EBF76 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25P4S87VXL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FIT3175_assignment4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25P4S87VXL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FIT3175_assignment4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -356,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C5662402A326841006EBF76 /* ImageModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C5662412A326841006EBF76 /* ImageModel.xcdatamodel */,
+			);
+			currentVersion = 4C5662412A326841006EBF76 /* ImageModel.xcdatamodel */;
+			path = ImageModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4C56621B2A322183006EBF76 /* Project object */;
 }
