@@ -44,8 +44,8 @@ class AirQualityViewController: UIViewController, CLLocationManagerDelegate {
         coLabel.isHidden = true
         
         // gesture recognistion is used to dismiss keyboard when tap action is performed outside the keyboard
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
     }
 
     /**
