@@ -36,6 +36,8 @@ class AirQualityViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         aqiLabel.isHidden = true
         coLabel.isHidden = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
       
     }
     
@@ -140,12 +142,12 @@ class AirQualityViewController: UIViewController, CLLocationManagerDelegate {
             
             if let aqi = (data["data"] as? NSArray)?.firstObject as? [String: Any],
                let aqiValue = aqi["aqi"] as? Int {
-                aqiLabel.text = "AQI: \(aqiValue)"
+                aqiLabel.text = "Air quality index at this location is \(aqiValue)"
             }
             
             if let co = (data["data"] as? NSArray)?.firstObject as? [String: Any],
                let coValue = co["co"] as? Int {
-                coLabel.text = "CO: \(coValue)"
+                coLabel.text = "Carbon monoxide at this location is \(coValue)µg/m³"
             }
             
             // Add similar code for other labels and data points
@@ -166,6 +168,10 @@ class AirQualityViewController: UIViewController, CLLocationManagerDelegate {
         
         // Present the alert controller
         present(alertController, animated: true, completion: nil)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     /*
     // MARK: - Navigation

@@ -20,6 +20,7 @@
 		4C5662482A32688A006EBF76 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5662472A32688A006EBF76 /* ImageCollectionViewCell.swift */; };
 		4C56624A2A3268D0006EBF76 /* RecycleLogCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5662492A3268D0006EBF76 /* RecycleLogCollectionViewController.swift */; };
 		4C8911B92A326DC00087FBCE /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8911B82A326DC00087FBCE /* AddItemViewController.swift */; };
+		4C8911BF2A32F1A30087FBCE /* References.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C8911BE2A32F1A30087FBCE /* References.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		4C5662472A32688A006EBF76 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C5662492A3268D0006EBF76 /* RecycleLogCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleLogCollectionViewController.swift; sourceTree = "<group>"; };
 		4C8911B82A326DC00087FBCE /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		4C8911BE2A32F1A30087FBCE /* References.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = References.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		4C56621A2A322183006EBF76 = {
 			isa = PBXGroup;
 			children = (
+				4C8911BE2A32F1A30087FBCE /* References.rtf */,
 				4C5662432A326862006EBF76 /* ImageMetaData+CoreDataClass.swift */,
 				4C5662442A326862006EBF76 /* ImageMetaData+CoreDataProperties.swift */,
 				4C5662252A322183006EBF76 /* FIT3175_assignment4 */,
@@ -148,6 +151,7 @@
 			files = (
 				4C5662332A322184006EBF76 /* LaunchScreen.storyboard in Resources */,
 				4C5662302A322184006EBF76 /* Assets.xcassets in Resources */,
+				4C8911BF2A32F1A30087FBCE /* References.rtf in Resources */,
 				4C56622E2A322183006EBF76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
