@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZG-fs-jXd">
-                                <rect key="frame" x="40" y="418" width="313" height="35"/>
+                                <rect key="frame" x="20" y="390.33333333333331" width="353" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Air Quality Index">
                                     <color key="baseBackgroundColor" red="0.59607845540000004" green="0.76862752440000004" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3Z-uf-Ahw">
-                                <rect key="frame" x="40" y="483" width="313" height="35"/>
+                                <rect key="frame" x="20" y="435.33333333333331" width="353" height="35"/>
                                 <color key="backgroundColor" red="0.59607845540000004" green="0.76862752440000004" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Recyle Log">
@@ -39,13 +39,13 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth-1389715" translatesAutoresizingMaskIntoConstraints="NO" id="duL-IK-6yM">
-                                <rect key="frame" x="40" y="143" width="313" height="167"/>
+                                <rect key="frame" x="20" y="123.00000000000001" width="353" height="188.33333333333337"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="duL-IK-6yM" secondAttribute="height" multiplier="313:167" id="N6b-b9-2BP"/>
+                                    <constraint firstAttribute="width" secondItem="duL-IK-6yM" secondAttribute="height" multiplier="313:167" id="60l-46-pxh"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EnviroPro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oT1-b7-bmk">
-                                <rect key="frame" x="40" y="330" width="313" height="49"/>
+                                <rect key="frame" x="20" y="321.33333333333331" width="353" height="49"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" playsSound="YES" staticText="YES"/>
                                 </accessibility>
@@ -58,18 +58,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y3Z-uf-Ahw" secondAttribute="trailing" constant="40" id="94o-VE-vJM"/>
-                            <constraint firstItem="HZG-fs-jXd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Ho3-CG-u2b"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="duL-IK-6yM" secondAttribute="trailing" constant="40" id="ZZ5-hj-YtF"/>
-                            <constraint firstItem="y3Z-uf-Ahw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Zzk-Ao-kyw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oT1-b7-bmk" secondAttribute="trailing" constant="40" id="aKr-cj-K7W"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HZG-fs-jXd" secondAttribute="trailing" constant="40" id="bLl-hA-bVg"/>
-                            <constraint firstItem="duL-IK-6yM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="jpB-WM-zcy"/>
-                            <constraint firstItem="oT1-b7-bmk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="n0Y-qE-zG7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y3Z-uf-Ahw" secondAttribute="bottom" constant="300" id="sbY-ZT-lxO"/>
-                            <constraint firstItem="oT1-b7-bmk" firstAttribute="top" secondItem="duL-IK-6yM" secondAttribute="bottom" constant="20" id="tky-6c-vuY"/>
-                            <constraint firstItem="y3Z-uf-Ahw" firstAttribute="top" secondItem="HZG-fs-jXd" secondAttribute="bottom" constant="30" id="vNZ-Ej-53R"/>
-                            <constraint firstItem="duL-IK-6yM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="wrT-XI-Onq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y3Z-uf-Ahw" secondAttribute="trailing" constant="20" id="5pc-1T-Gem"/>
+                            <constraint firstItem="HZG-fs-jXd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8lf-kE-DMy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oT1-b7-bmk" secondAttribute="trailing" constant="20" id="9hl-hm-8Ta"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="duL-IK-6yM" secondAttribute="trailing" constant="20" id="AyY-Sh-zZ4"/>
+                            <constraint firstItem="oT1-b7-bmk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="C6r-VK-czK"/>
+                            <constraint firstItem="y3Z-uf-Ahw" firstAttribute="top" secondItem="HZG-fs-jXd" secondAttribute="bottom" constant="10" id="DXj-xV-9EV"/>
+                            <constraint firstItem="oT1-b7-bmk" firstAttribute="top" secondItem="duL-IK-6yM" secondAttribute="bottom" constant="10" id="KAu-fV-0yG"/>
+                            <constraint firstItem="y3Z-uf-Ahw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NGb-Vi-NDF"/>
+                            <constraint firstItem="duL-IK-6yM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SNM-eO-gmZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HZG-fs-jXd" secondAttribute="trailing" constant="20" id="STO-is-E16"/>
+                            <constraint firstItem="HZG-fs-jXd" firstAttribute="top" secondItem="oT1-b7-bmk" secondAttribute="bottom" constant="20" id="eUV-bD-Oqi"/>
+                            <constraint firstItem="duL-IK-6yM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="usg-nK-AdA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mAQ-xm-m61"/>
