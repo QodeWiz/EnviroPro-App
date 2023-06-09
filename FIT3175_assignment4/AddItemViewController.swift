@@ -8,24 +8,31 @@
 import UIKit
 import CoreData
 
+/**
+ The class is responsible for allowing users to add more items to their recycling log. The class allows users to take the picture oif the itme they wish to log and asks if they successfully recycled they item they are logging in using a segmented control. The class conforms to UIImagePickerControllerDelegate and UINavigationControllerDelegate
+ */
 class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    /**
+     attributes
+     */
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var segmentControl: UISegmentedControl!
-    
     var managedObjectContext: NSManagedObjectContext?
     
-    
-    
+    /**
+     The controls the display of elements of the view controller.
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         let appDelegate = UIApplication.shared.delegate as! AppDelegate; managedObjectContext = appDelegate.persistentContainer?.viewContext
         animateEffect()
     }
     
+    /**
+     Method is invoked when user decides to take a photo by using ImageUIPickerController . the method also provides with an action sheet which offers three different solutions to get photo from callery in case there is no access to camera or if user simply wishes to
+     */
     @IBAction func takePhoto(_ sender: Any) {
         let controller = UIImagePickerController()
         controller.allowsEditing = false
@@ -49,6 +56,9 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.present(actionSheet, animated: true, completion: nil)
     }
     
+    /**
+     the method checks if user has a valid photo selected and attempts where made to use the segment control to isRecycled property from core data. However, the method successfully converts the image taken by user to image url file
+     */
     @IBAction func savePhoto(_ sender: Any) {
         guard let image = imageView.image else {
             displayMessage(title: "Error", message: "Cannot save until an image has been selected!")
@@ -82,14 +92,21 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
                 }
     }
     
-    // dispaly message function
+    /**
+     display message acts as a helper function to other classes that want to display an error
+     @param: title, which is the title of the error message
+     @oaram String, which is the message body of the error
+     */
     func displayMessage(title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
     
-    // delegate function
+    /**
+     delegate function is used to create
+     @param: infomration of the selected image
+     */
     func imagePickerController(_ picker: UIImagePickerController,
     didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
@@ -102,29 +119,4 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
-
-    func animateEffect() {
-        let layer = CAEmitterLayer()
-        layer.emitterPosition = CGPointMake(view.center.x, -200)
-        
-        let cell = CAEmitterCell()
-        cell.emissionRange = (22/7)*2
-        cell.lifetime = 4
-        cell.alphaSpeed = 8
-        cell.contents = UIImage(named: "white")!.cgImage
-        cell.velocity = 20
-        cell.color = { UIColor.green }().cgColor
-        
-        view.layer.addSublayer(layer)
-    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -11,7 +11,7 @@ import CoreData
 /**
  The class is responsible for displaying the the collection of cells containing images to the user. The class outlines the keys behaviours and properties of collection view customised to be displayed in a specific way for the app. The class also conforms to UIImagePickerControllerDelegate and UINavigationControllerDelegate
  */
-class RecycleLogCollectionViewController: UICollectionViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class RecycleLogCollectionViewController: UICollectionViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     /**
      attributes
